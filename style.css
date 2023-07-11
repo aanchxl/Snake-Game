@@ -1,0 +1,71 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    
+    background: rgb(222, 255, 208);
+}
+.wrapper {
+    width: 65vmin;
+    height: 75vmin;
+    border-radius: 8px;
+    background: rgb(15, 84, 22);
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.game-details {
+    color: aliceblue;
+    font-size: 1.2rem;
+    font-family: 'Exo 2', sans-serif;
+    padding: 20px 27px;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+}
+.play-board {
+    width: 100%;
+    height: 100%;
+    background: rgb(90, 155, 68);    
+    display: grid;
+    grid-template: repeat(30, 1fr) / repeat(30, 1fr);
+}
+.play-board .food{
+    background: red;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.8),
+    0 0 40px rgba(255, 0, 0, 0.5),
+    0 0 80px rgba(255, 0, 0, 0.3);
+    
+}
+ 
+.play-board .shead{
+    background: rgb(36, 13, 100);
+    border-radius: 2.5px;
+}
+.controls {
+    display: flex;
+    justify-content: space-between;
+    
+}
+.controls i {
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: aliceblue;
+    text-align: center;
+    width: calc(100% /4);
+    padding: 10px 0;
+    border-right: 2px solid rgb(90, 155, 68);
+}
+.controls i:hover {
+    background-color:rgb(21, 112, 37);
+    color: rgb(253, 185, 201);
+}
